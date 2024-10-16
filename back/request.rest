@@ -1,0 +1,104 @@
+POST http://localhost:3000/api-full/services
+Content-Type: application/json
+
+{
+      "name": "Passeio ",
+      "description": "Deixe seu Pet ainda mais bonito",
+      "price": 150,
+      "image": "https://images.unsplash.com/photo-1530700131180-d43d9b8cc41f?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+
+###
+
+GET http://localhost:3000/api-full/services
+
+###
+
+GET http://localhost:3000/api-pwa/services/66d14e23054ff95f8ef758a6
+
+###
+
+DELETE http://localhost:3000/api-full/services/67074105c200b9b30acc4f8f
+
+
+###
+
+PUT  http://localhost:3000/api-pwa/services/66d14f61a797cdf9c1995a97
+Content-Type: application/json
+
+{
+    "name ":"Teste atualizacao3",
+    "description":"duas descricao",
+    "price": 2800,
+    "image":"httpF193221%2Fprofile%2Foriginal%2Fpitbull-p.jpg%36YfyM&tbnid=d1UWMuQqzjxKcM&vet=12ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA"
+}
+
+###
+
+POST http://localhost:3000/api-pwa/parties
+Content-Type: application/json
+
+{
+    "title": "Firt partie 2",
+    "author": "Kashi",
+    "description": "Vem com tudo",
+    "budget": 3000,
+    "image": "https://ovicio.com.br/wp-content/uploads/2021/11/20211119-ovicio-one-piece-cosplay-luffy.jpg",
+    "services": [
+        {
+            "name ":"Alguma servico1",
+            "description":"duas descricao",
+            "price": 1000,
+            "image":"httpF193221%2Fprofile%2Foriginal%2Fpitbull-p.jpg%36YfyM&tbnid=d1UWMuQqzjxKcM&vet=12ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA"
+        },
+        {
+            "name ":"Alguma servico2",
+            "description":"duas descricao",
+            "price": 1600,
+            "image":"httpF193221%2Fprofile%2Foriginal%2Fpitbull-p.jpg%36YfyM&tbnid=d1UWMuQqzjxKcM&vet=12ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA"
+        }
+    ]
+    
+}
+
+###
+
+GET http://localhost:3000/api-pwa/parties
+
+###
+
+GET http://localhost:3000/api-pwa/parties/66d127e409ca046c9e9809b8
+
+
+###
+
+DELETE http://localhost:3000/api-pwa/parties/66d14fa7c09bc8f28eeec63b
+
+
+###
+
+PUT http://localhost:3000/api-pwa/parties/66d14fa7c09bc8f28eeec63b
+Content-Type: application/json
+
+{
+    "title": "Firt partie 2",
+    "author": "marquinhos",
+    "description": "Vem com tudo",
+    "budget": 10000,
+    "image": "httpF193221%2Fprofile%2Foriginal%2Fpitbull-p.jpg%36YfyM&tbnid=d1UWMuQqzjxKcM&vet=12ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA",
+    "services": [
+        {
+            "name ":"Alguma servico1",
+            "description":"duas descricao",
+            "price": 1000,
+            "image":"httpF193221%2Fprofile%2Foriginal%2Fpitbull-p.jpg%36YfyM&tbnid=d1UWMuQqzjxKcM&vet=12ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA"
+        },
+        {
+            "name ":"Alguma servico2",
+            "description":"duas descricao",
+            "price": 1000,
+            "image":"httpF193221%2Fprofile%2Foriginal%2Fpitbull-p.jpg%36YfyM&tbnid=d1UWMuQqzjxKcM&vet=12ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA..i&w=640&h=640&hcb=2&ved=2ahUKEwio9O7vp5uIAxWKLrkGHWYyPPkQM3oFCIEBEAA"
+        }
+    ]
+    
+}
